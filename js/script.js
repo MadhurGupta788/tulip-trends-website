@@ -1,0 +1,1 @@
+console.log("Tulip Trends Website Loaded Successfully!");
