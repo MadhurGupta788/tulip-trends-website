@@ -34,15 +34,25 @@ body{
 
     border-bottom:1px solid #e5e5e5;
 
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
 }
 
 .logo{
 
-    font-size:28px;
+    font-size:34px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    color:#1f2937;
+    letter-spacing:1px;
+
+    color:#0f172a;
 
 }
 
@@ -64,7 +74,7 @@ body{
 
     font-size:18px;
 
-    transition:0.3s;
+    transition:all .3s ease;
 
 }
 
