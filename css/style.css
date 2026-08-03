@@ -1,5 +1,25 @@
 /* CSS Reset */
 
+/* ==========================
+   Global Variables
+========================== */
+
+:root{
+
+    --primary-color:#2563eb;
+
+    --secondary-color:#1f2937;
+
+    --text-color:#333333;
+
+    --background-color:#f5f7fa;
+
+    --white:#ffffff;
+
+    --transition:0.3s ease;
+
+}
+
 *{
     margin:0;
     padding:0;
@@ -10,7 +30,7 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
-    background:#ffffff;
+    background:var(--white);
 
     color:#222;
 
@@ -30,7 +50,7 @@ body{
 
     padding:20px 60px;
 
-    background:#ffffff;
+    background:var(--white);
 
     border-bottom:1px solid #e5e5e5;
 
@@ -80,7 +100,7 @@ body{
 
 .nav-links a:hover{
 
-    color:#2563eb;
+    color:var(--primary-color);
 
 }
 
@@ -100,7 +120,7 @@ body{
 
     text-align:center;
 
-    background:#f5f7fa;
+    background:var(--background-color);
 
     padding:20px;
 
@@ -116,7 +136,7 @@ body{
 
     font-size:60px;
 
-    color:#1f2937;
+    color:var(--secondary-color);
 
     margin-bottom:20px;
 
@@ -126,7 +146,7 @@ body{
 
     font-size:32px;
 
-    color:#2563eb;
+    color:var(--primary-color);
 
     margin-bottom:20px;
 
@@ -154,44 +174,53 @@ body{
 
 }
 
-.btn-primary{
-
-    background:#2563eb;
-
-    color:white;
+.btn-primary,
+.btn-secondary{
 
     padding:15px 35px;
 
+    border-radius:8px;
+
     text-decoration:none;
 
-    border-radius:8px;
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:all var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary-color);
+
+    color:var(--white);
 
 }
 
 .btn-secondary{
 
-    border:2px solid #2563eb;
+    border:2px solid var(--primary-color);
 
-    color:#2563eb;
-
-    padding:15px 35px;
-
-    text-decoration:none;
-
-    border-radius:8px;
+    color:var(--primary-color);
 
 }
 
 .btn-primary:hover{
 
-    background:#174bbd;
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
 
 }
 
 .btn-secondary:hover{
 
-    background:#2563eb;
+    background:var(--primary-color);
 
-    color:white;
+    color:var(--white);
+
+    transform:translateY(-3px);
 
 }
