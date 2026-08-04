@@ -102,6 +102,10 @@ body{
 
     color:var(--primary-color);
 
+    border-bottom:2px solid var(--primary-color);
+
+    padding-bottom:5px;
+
 }
 
 /* ==========================
@@ -134,7 +138,11 @@ body{
 
 .hero h1{
 
-    font-size:60px;
+    font-size:64px;
+
+    font-weight:800;
+
+    line-height:1.15;
 
     color:var(--secondary-color);
 
@@ -144,23 +152,27 @@ body{
 
 .hero h2{
 
-    font-size:32px;
+    font-size:34px;
+
+    font-weight:600;
 
     color:var(--primary-color);
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
 
 .hero p{
 
-    font-size:20px;
+    font-size:22px;
 
     line-height:1.8;
 
     color:#555;
 
-    margin-bottom:40px;
+    max-width:760px;
+
+    margin:0 auto 45px;
 
 }
 
@@ -170,7 +182,11 @@ body{
 
     justify-content:center;
 
-    gap:20px;
+    align-items:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
 
 }
 
@@ -222,5 +238,34 @@ body{
     color:var(--white);
 
     transform:translateY(-3px);
+
+}
+
+/* ==========================
+   Hero Animation
+========================== */
+
+.hero-content{
+
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
